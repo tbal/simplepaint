@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/rma-project/static/css/main.7a060ff9.chunk.css",
+    "main.js": "/rma-project/static/js/main.8898b7b8.chunk.js",
+    "main.js.map": "/rma-project/static/js/main.8898b7b8.chunk.js.map",
+    "runtime-main.js": "/rma-project/static/js/runtime-main.545653eb.js",
+    "runtime-main.js.map": "/rma-project/static/js/runtime-main.545653eb.js.map",
+    "static/js/2.bb1a244f.chunk.js": "/rma-project/static/js/2.bb1a244f.chunk.js",
+    "static/js/2.bb1a244f.chunk.js.map": "/rma-project/static/js/2.bb1a244f.chunk.js.map",
+    "index.html": "/rma-project/index.html",
+    "precache-manifest.82c1e23edeb3143ceb0d9b114fb8a1c4.js": "/rma-project/precache-manifest.82c1e23edeb3143ceb0d9b114fb8a1c4.js",
+    "service-worker.js": "/rma-project/service-worker.js",
+    "static/css/main.7a060ff9.chunk.css.map": "/rma-project/static/css/main.7a060ff9.chunk.css.map",
+    "static/js/2.bb1a244f.chunk.js.LICENSE.txt": "/rma-project/static/js/2.bb1a244f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.545653eb.js",
+    "static/js/2.bb1a244f.chunk.js",
+    "static/css/main.7a060ff9.chunk.css",
+    "static/js/main.8898b7b8.chunk.js"
+  ]
+}
