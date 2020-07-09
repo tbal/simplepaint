@@ -439,23 +439,19 @@ function App() {
   }
 
   /**
-   * FIXME FIXME FIXME IMPORTANT
-   *
-   * @param start
-   * @param end
-   * @param ctx
-   * @param forceTool
-   * @param forceColor
-   * @param forceLineWidth
+   * Draw on canvas based on selected tool
    */
   function draw(start, end, ctx, forceTool, forceColor, forceLineWidth) {
     ctx.save();
 
+    // draw rounded lines/points
     ctx.lineJoin = 'round';
     ctx.lineCap = 'round';
 
     ctx.lineWidth =  forceLineWidth || brushSize;
     ctx.strokeStyle = forceColor || color;
+
+    // Tool = Eraser
     if (forceTool === 'eraser' || (typeof forceTool === 'undefined' && tool === 'eraser')) {
       ctx.lineWidth = eraserSize;
 
@@ -469,6 +465,7 @@ function App() {
     ctx.beginPath();
     ctx.moveTo(start.x, start.y);
 
+    // Tool = Spray
     if (forceTool === 'spray' || (typeof forceTool === 'undefined' && tool === 'spray')) {
       const lineWidth = forceLineWidth || brushSize;
 
@@ -497,6 +494,8 @@ function App() {
         );
         ctx.fill();
       }
+
+    // Tool = Pencil/Eraser
     } else {
       ctx.lineTo(end.x, end.y);
       ctx.stroke();
