@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "10bdcd93da6f9c0391c6b30ffc94b9b7",
+    "revision": "2ac23917384a858c741e73c07f41f174",
     "url": "/simplepaint/index.html"
   },
   {
-    "revision": "e2b840c4c5b58b3dcd5b",
+    "revision": "3eaed534466de6a288e1",
     "url": "/simplepaint/static/css/main.bc486d8b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/simplepaint/static/js/2.c0c695cd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e2b840c4c5b58b3dcd5b",
-    "url": "/simplepaint/static/js/main.955f4d09.chunk.js"
+    "revision": "3eaed534466de6a288e1",
+    "url": "/simplepaint/static/js/main.287a2eaf.chunk.js"
   },
   {
     "revision": "8d5209d187a6464a8d63",
