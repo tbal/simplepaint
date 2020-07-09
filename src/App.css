@@ -1,38 +1,205 @@
-.App {
+body {
+  overflow: hidden;
+  font-size: 100%;
+}
+
+body.loading {
+  cursor: progress;
+}
+
+.hidden {
+  display: none;
+}
+
+#dropZone {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Adding the text this way avoids losing event target,
+   which was a problem when dragging over text-element inside #dropZone */
+#dropZone:after {
+  content: '\2913 \A Bild hinzufügen';
+  white-space: pre;
+  width: 100%;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 5rem;
+  font-weight: bold;
   color: white;
+  line-height: 1;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
-.App-link {
-  color: #61dafb;
+#uploadedImage {
+  position: absolute;
+  cursor: move;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#colorPickerTooltip {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+}
+
+#debugTooltip {
+  position: absolute;
+}
+
+.cursor-pencil {
+  cursor: url("/simplepaint/pencil-alt.png") 0 30, auto;
+}
+
+.cursor-spray {
+  cursor: url("/simplepaint/spray-can.png") 0 0, auto;
+}
+
+.cursor-eraser {
+  cursor: url("/simplepaint/eraser.png") 5 30, auto;
+}
+
+.cursor-colorpicker {
+  cursor: url("/simplepaint/eye-dropper.png") 0 30, auto;
+}
+
+.icon-bar {
+  width: 3.5em;
+  background-color: #eee;
+
+  border: 1px solid rgba(102, 102, 102, 0.5);
+  border-left: none;
+
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.icon-bar .spacer {
+  border-top: 1px solid rgba(102, 102, 102, 0.5);
+  width: 80%;
+  margin: auto;
+}
+
+.icon-bar button {
+  width: 100%;
+}
+
+.icon-bar > span,
+.icon-bar button {
+  display: block;
+  text-align: center;
+  padding: 0.5em;
+  transition: all 0.3s ease;
+  color: #333;
+  font-size: 1.5em;
+}
+
+.icon-bar button,
+.icon-bar button:focus,
+.icon-bar button:hover,
+.icon-bar button:active {
+  border: 0;
+  outline: none;
+}
+
+.icon-bar .section:hover > button,
+.icon-bar button:hover,
+.icon-bar button.active {
+  cursor: pointer;
+  background-color: rgba(125, 252, 143, 0.7);
+}
+
+.icon-bar button:disabled {
+  opacity: 0.3;
+}
+
+.icon-bar button:disabled:hover {
+  cursor: default;
+  background: none;
+}
+
+.icon-bar .section {
+  position: relative;
+}
+
+.icon-bar .option-bar {
+  display: none;
+  width: 3.5em;
+  background-color: #eee;
+  border: 1px solid rgba(102, 102, 102, 0.5);
+  position: absolute;
+  left: 3.5em;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.icon-bar .option-bar:before {
+  content: " ";
+  white-space: pre;
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  transform: translate(0, -50%);
+  height: 3.5em;
+  background-color: #eee;
+}
+
+.icon-bar .option-bar:hover,
+.icon-bar button.has-option-bar:hover + .option-bar {
+  display: block;
+}
+
+.icon-bar .option-bar input[type="range"] {
+  -webkit-appearance: slider-vertical;
+  width: 100%;
+  height: 8.775em;
+  margin: 0;
+  outline: 0;
+}
+
+.icon-bar .option-bar span {
+  display: block;
+  margin: 0.5em auto;
+  width: 1em;
+  height: 1em;
+}
+
+.icon-bar .option-bar span:last-child {
+  font-size: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.icon-bar input[type="color"] {
+  padding: 0;
+  border: 1px solid #333;
+  -webkit-appearance: none;
+  width: 2.25em;
+  height: 2.25em;
+}
+
+.icon-bar input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.icon-bar input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+
+.fa-spray-can {
+  transform: scaleX(-1);
+}
+
+.circle-crop {
+  border-radius: 50%;
+  overflow: hidden;
 }
