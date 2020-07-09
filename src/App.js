@@ -800,9 +800,6 @@ function App() {
         onMouseOut={handleCanvasMouseOut}
       />
 
-      <div id="debugTooltip" style={{ left: cursorPosition.x, top: cursorPosition.y + 20}}
-           className={isDebug ? '' : 'hidden '}>x: {cursorPosition.x} y: {cursorPosition.y}</div>
-
       <div id="colorPickerTooltip"
            style={{ left: cursorPosition.x, top: cursorPosition.y + 20, backgroundColor: colorAtColorPickerPosition }}
            className={tool === 'colorpicker' ? '' : 'hidden '} />
