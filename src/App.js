@@ -471,19 +471,6 @@ function App() {
 
       ctx.fillStyle = forceColor || color;
 
-      // for (let i = lineWidth; i--;) {
-      //   ctx.arc(
-      //       end.x + Math.cos(Math.random() * Math.PI * 2) * lineWidth *
-      //       Math.random(),
-      //       end.y + Math.sin(Math.random() * Math.PI * 2) * lineWidth *
-      //       Math.random(),
-      //       1,
-      //       0, Math.PI * 2, false
-      //   );
-      //
-      //   ctx.fill();
-      // }
-
       ctx.rect(end.x, end.y, 1, 1);
 
       for (let i = lineWidth; i--;) {
