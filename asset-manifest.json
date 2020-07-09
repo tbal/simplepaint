@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/simplepaint/static/css/main.1dac2115.chunk.css",
-    "main.js": "/simplepaint/static/js/main.ab3fd223.chunk.js",
-    "main.js.map": "/simplepaint/static/js/main.ab3fd223.chunk.js.map",
+    "main.css": "/simplepaint/static/css/main.bc486d8b.chunk.css",
+    "main.js": "/simplepaint/static/js/main.955f4d09.chunk.js",
+    "main.js.map": "/simplepaint/static/js/main.955f4d09.chunk.js.map",
     "runtime-main.js": "/simplepaint/static/js/runtime-main.24fa87e6.js",
     "runtime-main.js.map": "/simplepaint/static/js/runtime-main.24fa87e6.js.map",
     "static/js/2.c0c695cd.chunk.js": "/simplepaint/static/js/2.c0c695cd.chunk.js",
     "static/js/2.c0c695cd.chunk.js.map": "/simplepaint/static/js/2.c0c695cd.chunk.js.map",
     "index.html": "/simplepaint/index.html",
-    "precache-manifest.f901eece1e432a2258ff6d69900c252c.js": "/simplepaint/precache-manifest.f901eece1e432a2258ff6d69900c252c.js",
+    "precache-manifest.bdd110b73ee41bb14c7453681ea0a32c.js": "/simplepaint/precache-manifest.bdd110b73ee41bb14c7453681ea0a32c.js",
     "service-worker.js": "/simplepaint/service-worker.js",
-    "static/css/main.1dac2115.chunk.css.map": "/simplepaint/static/css/main.1dac2115.chunk.css.map",
+    "static/css/main.bc486d8b.chunk.css.map": "/simplepaint/static/css/main.bc486d8b.chunk.css.map",
     "static/js/2.c0c695cd.chunk.js.LICENSE.txt": "/simplepaint/static/js/2.c0c695cd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.24fa87e6.js",
     "static/js/2.c0c695cd.chunk.js",
-    "static/css/main.1dac2115.chunk.css",
-    "static/js/main.ab3fd223.chunk.js"
+    "static/css/main.bc486d8b.chunk.css",
+    "static/js/main.955f4d09.chunk.js"
   ]
 }
